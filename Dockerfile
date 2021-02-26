@@ -11,6 +11,6 @@ WORKDIR /app
 
 COPY --from=build-env /app/target/RESTful-1.0-SNAPSHOT-jar-with-dependencies.jar .
 
-CMD ["java", "RESTful-1.0-SNAPSHOT-jar-with-dependencies.jar"]
+CMD ["java", "-jar", "RESTful-1.0-SNAPSHOT-jar-with-dependencies.jar"]
 
 EXPOSE 8080/tcp
