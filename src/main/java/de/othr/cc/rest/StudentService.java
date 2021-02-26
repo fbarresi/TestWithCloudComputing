@@ -25,7 +25,6 @@ public class StudentService {
 
     @Path("students/{id}")
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
     public Student getStudentById(@PathParam("id") int id)
     {
         return repository.find(eq("id", id)).firstOrDefault();
@@ -43,8 +42,6 @@ public class StudentService {
 
     @Path("students")
     @POST
-    @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_JSON)
     public Student addStudent(Student student)
     {
         var size = repository.getDocumentCollection().size();
