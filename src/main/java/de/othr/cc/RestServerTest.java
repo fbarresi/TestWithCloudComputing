@@ -9,6 +9,7 @@ import org.glassfish.jersey.server.ResourceConfig;
 import javax.swing.*;
 import java.io.IOException;
 import java.net.InetSocketAddress;
+import java.util.Scanner;
 
 public class RestServerTest {
     public static void main(String[] args) throws IOException {
@@ -27,7 +28,8 @@ public class RestServerTest {
 
         // Show dialogue in order to prevent premature ending of server(s)
         //JOptionPane.showMessageDialog(null, "Stop server...");
-        System.in.read();
+        var scanner = new Scanner(System.in);
+        scanner.nextLine();
         server.stop(0);
     }
 
