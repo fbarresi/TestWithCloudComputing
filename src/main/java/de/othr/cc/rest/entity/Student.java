@@ -4,7 +4,7 @@ package de.othr.cc.rest.entity;
 
 import java.io.Serializable;
 
-public class Student implements Serializable {
+public class Student {
 
     public int id;
 
