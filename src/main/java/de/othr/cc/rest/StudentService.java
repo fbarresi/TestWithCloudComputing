@@ -2,7 +2,6 @@ package de.othr.cc.rest;
 
 import de.othr.cc.rest.entity.Student;
 import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.MediaType;
 import javassist.tools.rmi.ObjectNotFoundException;
 import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.objects.ObjectRepository;
